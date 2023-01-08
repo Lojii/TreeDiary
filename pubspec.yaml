@@ -1,0 +1,104 @@
+name: treediary
+description: Tree Diary.
+
+version: 1.0.0+7
+
+environment:
+  sdk: ">=2.17.3 <3.0.0"
+  flutter: ">=3.0.3"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  ffi: ^2.0.0
+  libgit2dart:
+    path: ./thirdparty/libgit2dart
+  flutter_heatmap_calendar: # 统计图表
+    path: ./thirdparty/flutter_heatmap_calendar
+  flutter_highlight:
+    path: ./thirdparty/flutter_highlight
+  flutter_bugly:
+    path: ./thirdparty/flutter_bugly
+  flutter_localizations:
+    sdk: flutter
+  provider: ^6.0.2
+  oktoast: ^3.1.5
+  in_app_purchase: ^3.0.7 #内购
+  permission_handler: ^10.0.0
+  package_info: ^2.0.2
+  isolate_json: ^2.1.0+1
+  shared_preferences: ^2.0.15
+  localstorage: ^4.0.0+1
+  cupertino_icons: ^1.0.2
+  lottie: ^1.3.0
+  path_provider: ^2.0.10
+  json_serializable: ^6.2.0
+  flutter_easyloading: ^3.0.5
+  flutter_svg: ^1.0.3
+  images_picker: ^1.2.11  # 微信风格图片视频选择器
+  reorderables: ^0.5.0 # 拖拽排序
+  extended_image: ^6.1.0 # 图片浏览器
+  chewie: ^1.3.3
+  video_player: ^2.4.2
+  geolocator: ^9.0.1
+  flutter_map: ^2.2.0
+  flutter_map_location_marker: ^4.1.4
+  latlong2: ^0.8.0
+  cached_network_image: ^3.2.0
+  modal_bottom_sheet: ^2.0.1  # 底部模态弹窗
+  sqflite_common: ^2.2.1+1
+  easy_refresh: ^3.0.4+2 #下拉刷新 尝试替换为 https://github.com/peng8350/flutter_pulltorefresh
+  extended_nested_scroll_view: ^5.1.2 # 嵌套滑动
+  flutter_screenutil: ^5.5.3+2
+  thememode_selector: ^0.1.0 # 一个很好看的明暗主题切换动画按钮
+  flutter_pickers: ^2.1.9 # 选择器
+  adaptive_dialog: ^1.6.4
+  basic_utils: ^4.2.2 #工具合集
+  ssh_key: ^0.7.1
+  openssh_ed25519: ^1.1.0
+  cryptography: ^2.0.5
+  url_launcher: ^6.1.5
+  visibility_detector: ^0.3.3
+  thread: ^0.1.2 # 异步封装
+  universal_io: ^2.0.4
+  uni_links: ^0.5.1
+  wakelock: ^0.6.2  # 屏幕常亮控制
+  share_plus: ^4.0.10
+  image_gallery_saver: ^1.7.1  #保存图片到本地
+  dropdown_search: ^5.0.2 #下拉框
+  webview_flutter: ^3.0.4
+  flutter_inappwebview: ^5.4.3+7
+  flutter_html: ^3.0.0-alpha.5
+  flutter_html_all: ^3.0.0-alpha.3
+  dart_markdown: ^2.0.0
+  photo_view: ^0.14.0
+  vibration: ^1.7.5 # 长按震动反馈
+  dio: ^4.0.6
+  flutter_native_timezone: ^2.0.0 # 时区，用于判断用户的位置
+
+dev_dependencies:
+  sqflite_common_ffi: ^2.1.1
+  hive_generator: ^1.1.2  # hive的扩展
+  benchmark_harness: ^2.0.0
+  import_sorter: ^4.6.0
+  test: ^1.16.5
+  build_runner: ^2.1.2
+  dart_code_metrics: ^4.10.1
+  flutter_lints: ^1.0.4
+  process_run: ^0.12.3+2
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - static/images/
+    - static/file/
+    - static/language/
+
+  fonts:
+    - family: wxcIconFont
+      fonts:
+        - asset: static/font/iconfont.ttf
+    - family: google_kavivanar
+      fonts:
+        - asset: static/font/google_kavivanar.ttf
